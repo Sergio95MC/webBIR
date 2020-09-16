@@ -56,7 +56,7 @@ ROOT_URLCONF = 'BIRQUIZ.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['D:/Proyectos Python/Django/ProyectoBIR/BIRQUIZ/BIRQUIZ/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
