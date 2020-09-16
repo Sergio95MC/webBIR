@@ -8,5 +8,5 @@ from django.shortcuts import render
 
 def intro(request):
 
-    fecha_actual = datetime.datetime.now()
+    fecha_actual = datetime.datetime.now().date
     return render(request, 'intro.html', {'dameFecha':fecha_actual})

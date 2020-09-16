@@ -16,13 +16,13 @@
 
         {% include 'superior/barra.html' %}
 
-        <h3 style="text-align: right;">Cursos de programación, ofimática y diseño web</h3>
+        <h3 style="text-align: right; color:red">Quedan x días para el examen</h3>
 
         {% block content %}
 
         {% endblock%} 
 
-        <p style = 'background-color:aquamarine; color:white; text-align: right;'>Página en construcción. Gracias por su visita.</p>
+        <p style = 'background-color:aquamarine; color:white; text-align: right;'>{{dameFecha}}</p>
 
     <body>
 
