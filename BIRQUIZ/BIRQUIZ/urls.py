@@ -19,5 +19,5 @@ from BIRQUIZ.views import intro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',intro),
+    path('intro/',intro),
 ]
