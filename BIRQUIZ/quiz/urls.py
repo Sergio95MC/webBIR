@@ -1,6 +1,6 @@
 from django.urls import path
-from BIRQUIZ import views as BQviews
+from . import views
 
 urlpatterns = [
-    path('intro/', BQviews.intro),
+    path('intro/', views.intro),
 ]
