@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'w0yh!l1qasz0t$xm&0i%6sfe%*73x$%82lem(jmuefq#k-1wnn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -53,10 +53,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BIRQUIZ.urls'
 
+template_dir = str(BASE_DIR) + "/BIRQUIZ/templates"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/Proyectos Python/Django/ProyectoBIR/BIRQUIZ/BIRQUIZ/templates'],
+        'DIRS': [template_dir],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
