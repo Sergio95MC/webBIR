@@ -16,10 +16,10 @@
 
     <body>
         <ul id = "barra" style="text-align: center;">
-            <li>Inicio</li>
-            <li>Instrucciones</li>
-            <li>QUIZ</li>
-            <li>Contacto</li>
+            <li><a href="{% url 'inicio' %}">Home</a></li> 
+            <li><a href="{% url 'instrucciones' %}">Instrucciones</a></li>
+            <li><a href="{% url 'quiz' %}">QUIZ</a></li> 
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>  
         </ul>
     </body>
 

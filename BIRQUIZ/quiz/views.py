@@ -10,3 +10,20 @@ def intro(request):
 
     fecha_actual = datetime.datetime.now().date
     return render(request, 'intro.html', {'dameFecha':fecha_actual})
+  
+
+
+
+def instrucciones(request):
+
+    return render(request, 'instrucciones.html')
+
+
+def QUIZ(request):
+
+    return render(request, 'quiz.html')
+
+def contacto(request):
+
+    return render(request, 'contacto.html')
+
